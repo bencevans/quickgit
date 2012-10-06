@@ -4,6 +4,10 @@ Temporary (15 Mins) Git Host used for sending git repos quickly to users behind 
 
 ![Example Image](http://cl.ly/image/35012d3G2N0f/Screen%20Shot%202012-10-06%20at%2012.41.04.png)
 
+##Deployment Guides
+
+[Check the Wiki](http://github.com/bencevans/QuickGit/wiki)
+
 ##Licence
 
 (The MIT Licence)
