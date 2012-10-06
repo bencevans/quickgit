@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuickGit</title>
+	<style type="text/css">
+	body {
+		color:#111;
+	}
+	.container {
+		margin:auto;
+		width:500px;
+	}
+	a {
+		text-decoration: none;
+
+	}
+	a h1 {
+		color:#000;
+		font-family: 'Finger Paint', cursive;
+		text-align:center;
+		font-size: 40px;
+	}
+	.terminal {
+		background-color:#222;
+		box-shadow:inset 0 0 10px black;
+		color:#ddd;
+		font-family: monospace;
+		padding:10px;
+
+	}
+	input {
+		border: 1px solid black;
+		background-color:#ccc;
+		padding:20px;
+		color:#111;
+		width:100%;
+		font-size:20px;
+		font-family: 'Finger Paint', cursive;
+	}
+
+	h2 {
+		font-family: 'Finger Paint', cursive;
+		border-bottom:1px solid #aaa;
+	}
+
+	p {
+		color:red;
+		text-align:center;
+	}
+	</style>
+</head>
+<body>
+	<div class=container>
+		<a href="/"><h1>QuickGit</h1></a>
+		{{#if gitURL}}
+		<p>Your Git Repo Container will collapse in <span id="timeLeft">900</span> seconds!</p>
+		<h2>You:</h2>
+		<div class="terminal">git push {{gitURL}} master</div><br/>
+		<h2>Friend:</h2>
+		<div class="terminal">git clone {{gitURL}} master</div>
+		{{else}}
+		<form method="POST" action="/">
+			<input type=submit value="Generate Git Repo Container">
+			<p>(Last for 15 minutes before self-destruction)</p>
+		</form>
+		{{/if}}
+	</div>
+	<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+	{{#if gitURL}}
+	<script type="text/javascript">
+	var timeLeftElement = document.getElementById('timeLeft');
+	var countdownInterval = setInterval(function() {
+		if(timeLeftElement.innerHTML > 0)
+			return timeLeftElement.innerHTML = parseInt(timeLeftElement.innerHTML) - 1;
+		window.location = '/';
+	}, 1000);
+	</script>
+	{{/if}}
+</body>
+</html>
