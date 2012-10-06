@@ -2,7 +2,7 @@
 
 Temporary (15 Mins) Git Host used for sending git repos quickly to users behind a firewall.
 
-![Example Image](http://cl.ly/image/0d2h1G0W2n3z/Screen%20Shot%202012-10-05%20at%2018.52.13.png)
+![Example Image](http://cl.ly/image/35012d3G2N0f/Screen%20Shot%202012-10-06%20at%2012.41.04.png)
 
 ##Licence
 
