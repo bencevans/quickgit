@@ -8,6 +8,22 @@ Temporary (15 Mins) Git Host used for sending git repos quickly to users behind 
 
 [Check the Wiki](http://github.com/bencevans/QuickGit/wiki)
 
+##Local Installation
+
+###Requirements:
+
+* [Node.js](http://nodejs.org) and NPM
+
+###Installation
+
+    git clone https://github.com/bencevans/QuickGit.git
+    cd QuickGit
+    npm install
+    node app.js
+
+Then open your browser to [http://localhost:3000/](http://localhost:3000/)
+
+
 ##Licence
 
 (The MIT Licence)
