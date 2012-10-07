@@ -55,9 +55,9 @@
 		{{#if gitURL}}
 		<p>Your Git Repo Container will collapse in <span id="timeLeft">900</span> seconds!</p>
 		<h2>You:</h2>
-		<div class="terminal">git push {{gitURL}} master</div><br/>
+		<div class="terminal" id="push">git push {{gitURL}} master</div><br/>
 		<h2>Friend:</h2>
-		<div class="terminal">git clone {{gitURL}} master</div>
+		<div class="terminal" id="clone">git clone {{gitURL}}</div>
 		{{else}}
 		<form method="POST" action="/">
 			<input type=submit value="Generate Git Repo Container">

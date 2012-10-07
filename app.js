@@ -74,4 +74,8 @@ var server = http.createServer(function (req, res) {
 
 });
 
-server.listen(config.port);
+if (!module.parent) {
+    server.listen(config.port);
+} else {
+    module.exports = server;
+}
