@@ -50,7 +50,7 @@ var server = http.createServer(function (req, res) {
   if(req.method == 'POST') {
 
     // Create(d) Repo Container Page
-    tmp.dir({template: config.repoPath + '/XXXXXX.git'}, function (err, path) {
+    tmp.dir({template: config.repoPath + '/XXXXXX'}, function (err, path) {
       if (err) throw err;
       locals.gitURL = 'http://' + config.externalHost + ':' + config.externalPort + path.replace(config.repoPath, '');
       res.statusCode = 200;
