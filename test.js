@@ -3,8 +3,7 @@ var assert = require('assert')
 , spawn = require('child_process').spawn
 , request = require('request')
 , cheerio = require('cheerio')
-, freeport = require('freeport')
-, forever = require('forever-monitor');
+, freeport = require('freeport');
 
 describe('QuickGit', function (){
 

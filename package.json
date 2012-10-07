@@ -15,7 +15,6 @@
     "freeport": "~1.0.0",
     "request": "~2.11.4",
     "cheerio": "~0.10.1",
-    "forever-monitor": "~1.1.0",
     "mocha": "~1.6.0"
   },
   "scripts": {
