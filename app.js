@@ -34,8 +34,9 @@ repos.on('fetch', function (fetch) {
 
 var server = http.createServer(function (req, res) {
 
-  if(req.headers['user-agent'].match(/git/))
-    return repos.handle(req, res);
+  if(req.headers['user-agent'])
+    if(req.headers['user-agent'].match(/git/))
+      return repos.handle(req, res);
 
   if(req.url !== '/') {
     res.statusCode = 404;
