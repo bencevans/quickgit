@@ -1,11 +1,12 @@
 // Generic Requirements
 var fs = require('fs');
+var path = require('path');
 var tmp = require('tmp');
 var wrench = require('wrench');
 
 // Config
 var config = {};
-config.repoPath = process.env.REPO_PATH || "/tmp/repos";
+config.repoPath = path.resolve(process.env.REPO_PATH || "/tmp/repos");
 config.port = process.env.PORT || 3000;
 config.externalPort = process.env.EXTERNAL_PORT || config.port;
 config.externalHost = process.env.EXTERNAL_HOST || 'localhost';
@@ -37,11 +38,10 @@ var server = http.createServer(function (req, res) {
   if(req.headers['user-agent'])
     if(req.headers['user-agent'].match(/git/))
       return repos.handle(req, res);
-
-  if(req.url !== '/') {
-    res.statusCode = 404;
-    res.end('404');
-  }
+    else {
+      res.statusCode = 404;
+      return res.end('404');
+    }
 
   var locals = {}
 
