@@ -57,8 +57,11 @@ var server = http.createServer(function (req, res) {
       res.end(template(locals));
 
       setInterval(function() {
-        wrench.rmdirRecursive(path, function(err){
-          if(err) return console.error(err);
+        fs.exists(path, function(exists) {
+          if(!exists) return false;
+          wrench.rmdirRecursive(path, function(err){
+            if(err) return console.error(err);
+          });
         });
       }, 15000);
     });
