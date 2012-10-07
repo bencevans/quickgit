@@ -39,8 +39,10 @@ var server = http.createServer(function (req, res) {
     if(req.headers['user-agent'].match(/git/))
       return repos.handle(req, res);
     else {
-      res.statusCode = 404;
-      return res.end('404');
+      if(req.url !== '/') {
+        res.statusCode = 404;
+        res.end('404');
+      }
     }
 
   var locals = {}
