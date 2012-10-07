@@ -60,7 +60,7 @@ var server = http.createServer(function (req, res) {
         wrench.rmdirRecursive(path, function(err){
           if(err) return console.error(err);
         });
-      }, 900);
+      }, 15000);
     });
 
   } else {
