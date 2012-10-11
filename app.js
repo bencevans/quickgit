@@ -49,7 +49,7 @@ var server = http.createServer(function (req, res) {
       }
     }
 
-  var locals = {}
+  var locals = {};
 
   if(req.method == 'POST') {
 

@@ -1,6 +1,7 @@
 
 var assert = require('assert')
 , spawn = require('child_process').spawn
+, path = require('path')
 , request = require('request')
 , cheerio = require('cheerio')
 , freeport = require('freeport');
@@ -23,10 +24,10 @@ describe('QuickGit', function (){
 			assert.ok(quickGitInstance);
 
 			quickGitInstance.listen(port);
-			quickGitURL = 'http://127.0.0.1:' + port
+			quickGitURL = 'http://127.0.0.1:' + port;
 
 			done();
-		})
+		});
 
 	});
 
