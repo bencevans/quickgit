@@ -52,7 +52,7 @@ var server = http.createServer(function (req, res) {
     // Create(d) Repo Container Page
     tmp.dir({template: config.repoPath + '/XXXXXX'}, function (err, path) {
       if (err) throw err;
-      locals.gitURL = 'http://' + config.externalHost + ':' + config.externalPort + path.replace(config.repoPath, '');
+      locals.gitURL = 'http://' + config.externalHost + ':' + config.externalPort + path.replace(config.repoPath, '') + '.git';
       res.statusCode = 200;
       var source = fs.readFileSync(__dirname + '/index.html').toString();
       var template = Handlebars.compile(source);
