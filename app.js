@@ -2,6 +2,7 @@
 var fs = require('fs');
 var path = require('path');
 var tmp = require('tmp');
+var mkdirp = require('mkdirp');
 var wrench = require('wrench');
 
 // Config
@@ -18,6 +19,9 @@ var Handlebars = require('handlebars');
 // Git Server Requirements
 var pushover = require('pushover');
 var repos = pushover(config.repoPath);
+
+// mkdir -p ReposPath
+mkdirp.sync(config.repoPath, 0777);
 
 repos.on('push', function (push) {
   // TODO: Reject if more than config.maxRepoSize

@@ -9,7 +9,8 @@
     "mu": "~0.5.2",
     "wrench": "~1.3.9",
     "pushover": "~1.0.3",
-    "tmp": "~0.0.14"
+    "tmp": "~0.0.14",
+    "mkdirp": "~0.3.4"
   },
   "devDependencies": {
     "freeport": "~1.0.0",
