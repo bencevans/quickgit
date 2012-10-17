@@ -16,6 +16,13 @@ Temporary (15 Mins) Git Host used for sending git repos quickly to users behind 
 
 ###Installation
 
+*NPM*
+
+	npm install -g quickgit
+	quickgit
+
+*or via Git*
+
     git clone https://github.com/bencevans/QuickGit.git
     cd QuickGit
     npm install
