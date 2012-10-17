@@ -1,7 +1,6 @@
 {
   "name": "quickgit",
-  "version": "0.0.0",
-  "private": "true",
+  "version": "0.0.1",
   "description": "Temp Git Repo Host to Send a Git Repo to a Friend Quickly that's behind a firewall",
   "main": "app.js",
   "dependencies": {
@@ -18,6 +17,7 @@
     "cheerio": "~0.10.1",
     "mocha": "~1.6.0"
   },
+  "bin":"bin/quickgit",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha test.js"
   },

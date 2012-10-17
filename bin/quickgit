@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var quickgit = require('../app.js');
+
+quickgit.listen(3000);
+console.log("QuickGit is listening on port " + 3000);
+console.log("Open your browser to http://localhost:" + 3000 + "/");
+console.log();
+console.log("To stop, press ctrl + c");
