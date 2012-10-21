@@ -1,4 +1,4 @@
-#QuickGit
+#QuickGit ![Travis Build Status](https://secure.travis-ci.org/bencevans/QuickGit.png)
 
 Temporary (15 Mins) Git Host used for sending git repos quickly to users behind a firewall.
 
