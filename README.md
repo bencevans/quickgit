@@ -18,15 +18,19 @@ Temporary (15 Mins) Git Host used for sending git repos quickly to users behind 
 
 *NPM*
 
-	npm install -g quickgit
-	quickgit
+```bash
+npm install -g quickgit
+quickgit
+```
 
 *or via Git*
 
-    git clone https://github.com/bencevans/QuickGit.git
-    cd QuickGit
-    npm install
-    node app.js
+```bash
+git clone https://github.com/bencevans/QuickGit.git
+cd QuickGit
+npm install
+node app.js
+```
 
 Then open your browser to [http://localhost:3000/](http://localhost:3000/)
 
