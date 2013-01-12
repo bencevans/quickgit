@@ -16,7 +16,7 @@ Temporary (15 Mins) Git Host used for sending git repos quickly to users behind 
 
 ###Installation
 
-*NPM*
+*npm*
 
 ```bash
 npm install -g quickgit
