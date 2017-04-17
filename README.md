@@ -1,20 +1,20 @@
-#QuickGit ![Travis Build Status](https://secure.travis-ci.org/bencevans/QuickGit.png)
+# QuickGit ![Travis Build Status](https://secure.travis-ci.org/bencevans/QuickGit.png)
 
 Temporary (15 Mins) Git Host used for sending git repos quickly to users behind a firewall.
 
 ![Example Image](http://cl.ly/image/35012d3G2N0f/Screen%20Shot%202012-10-06%20at%2012.41.04.png)
 
-##Deployment Guides
+## Deployment Guides
 
 [Check the Wiki](http://github.com/bencevans/QuickGit/wiki)
 
-##Local Installation
+## Local Installation
 
-###Requirements:
+### Requirements:
 
 * [Node.js](http://nodejs.org) and NPM
 
-###Installation
+### Installation
 
 *npm*
 
@@ -35,7 +35,7 @@ node app.js
 Then open your browser to [http://localhost:3000/](http://localhost:3000/)
 
 
-##Licence
+## Licence
 
 (The MIT Licence)
 
